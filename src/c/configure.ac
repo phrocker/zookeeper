@@ -26,16 +26,6 @@ AM_INIT_AUTOMAKE([-Wall foreign])
 AC_CONFIG_HEADER([config.h])
 
 # Checks for programs.
-AC_ARG_WITH(cppunit,
-        [  --without-cppunit       do not use CPPUNIT])
-
-if test "$with_cppunit" = "no" ; then
-   CPPUNIT_PATH="No_CPPUNIT"
-   CPPUNIT_INCLUDE=
-   CPPUNIT_LIBS=
-else
-   AM_PATH_CPPUNIT(1.10.2)
-fi
 
 if test "$CALLER" = "ANT" ; then
 CPPUNIT_CFLAGS="$CPPUNIT_CFLAGS -DZKSERVER_CMD=\"\\\"${base_dir}/src/c/tests/zkServer.sh\\\"\""
