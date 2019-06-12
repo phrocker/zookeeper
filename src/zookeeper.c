@@ -3439,7 +3439,7 @@ int zoo_add_auth(zhandle_t *zh,const char* scheme,const char* cert,
 
 static const char* format_endpoint_info(const struct sockaddr_storage* ep)
 {
-    static char buf[128];
+    static char buf[135];
     char addrstr[128];
     void *inaddr;
 #ifdef WIN32
