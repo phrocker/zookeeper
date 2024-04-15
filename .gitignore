@@ -99,7 +99,6 @@ zookeeper-client/zookeeper-client-c/TEST-*.txt
 zookeeper-client/zookeeper-client-c/*.la
 zookeeper-client/zookeeper-client-c/*.lo
 zookeeper-client/zookeeper-client-c/*.o
-zookeeper-client/zookeeper-client-c/generated/
 
 # Python
 *.py[cod]
